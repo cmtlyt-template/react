@@ -18,6 +18,19 @@ module.exports = {
       plugin: require('craco-plugin-scoped-css'),
     },
   ],
+  babel: {
+    plugins: [
+      // antd按需加载
+      [
+        'import',
+        {
+          libraryName: 'antd',
+          libraryDirectory: 'es',
+          style: 'css',
+        },
+      ],
+    ],
+  },
   devServer: {
     // 服务端口
     port: 3080,
