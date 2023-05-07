@@ -22,19 +22,13 @@
   },
   "license": "<%=license%>",
   "dependencies": {
-    <% if(useAntd) {%>
     "antd": "^5.4.7",
-    <% } %>
-    <% if(useImmer) {%>
     "immer": "^10.0.1",
-    "use-immer": "^0.9.0",
-    <% } %>
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
-    <% if(useRedux) {%>
-    "redux": "^4.2.1"
-    <% } %>
+    "redux": "^4.2.1",
+    "use-immer": "^0.9.0"
   },
   "devDependencies": {
     "@craco/craco": "^5.9.0",

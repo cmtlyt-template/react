@@ -14,24 +14,6 @@ module.exports = function(dirName) {
     },
     {
       type: 'confirm',
-      name: 'useAntd',
-      default: true,
-      message: '是否使用antd组件库?',
-    },
-    {
-      type: 'confirm',
-      name: 'useImmer',
-      default: true,
-      message: '是否使用immer优化状态管理?',
-    },
-    {
-      type: 'confirm',
-      name: 'useRedux',
-      default: true,
-      message: '是否使用redux作为全局状态管理?',
-    },
-    {
-      type: 'confirm',
       name: 'private',
       default: false,
       message: '这个项目是私有的嘛?',
@@ -58,6 +40,6 @@ module.exports = function(dirName) {
       name: 'license',
       default: 'MIT',
       message: '这个项目是啥协议?',
-    }
+    },
   ]
 }

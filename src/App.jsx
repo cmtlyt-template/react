@@ -2,10 +2,8 @@ import { HashRouter } from 'react-router-dom'
 import RouterView from './router'
 import Navbar from '@comp/Navbar'
 
-<$ if(useAntd) { $>
 // ant design样式
 import 'antd/dist/reset.css'
-<$ } $>
 // 自定义全局样式
 import './assets/styles/global.scss'
 
