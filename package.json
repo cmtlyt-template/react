@@ -1,0 +1,57 @@
+{
+  "name": "<%=projectName%>",
+  "version": "0.1.0",
+  "description": "<%_description_%>",
+  "main": "index.js",
+  "private": "<%=private%>",
+  "scripts": {
+    "dev": "craco start",
+    "build": "craco build",
+    "eject": "craco eject",
+    "ori:dev": "react-scripts start",
+    "ori:build": "react-scripts build",
+    "ori:eject": "react-scripts eject"
+  },
+  "keywords": [
+    "react",
+    "template"
+  ],
+  "author": {
+    "name": "<%=author%>",
+    "email": "<%=authorEmail%>"
+  },
+  "license": "<%=license%>",
+  "dependencies": {
+    <% if(useAntd) {%>
+    "antd": "^5.4.7",
+    <% } %>
+    <% if(useImmer) {%>
+    "immer": "^10.0.1",
+    "use-immer": "^0.9.0",
+    <% } %>
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1",
+    <% if(useRedux) {%>
+    "redux": "^4.2.1"
+    <% } %>
+  },
+  "devDependencies": {
+    "@craco/craco": "^5.9.0",
+    "craco-plugin-scoped-css": "^1.1.1",
+    "prettier": "^2.8.8",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
