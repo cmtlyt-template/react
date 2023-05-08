@@ -19,16 +19,20 @@ module.exports = {
     },
   ],
   babel: {
-    plugins: [
-      // antd按需加载
+    presets: [
       [
-        'import',
+        '@babel/preset-env',
         {
-          libraryName: 'antd',
-          libraryDirectory: 'es',
-          style: 'css',
+          targets: {
+            chrome: '49',
+            ios: '10',
+          },
         },
       ],
+    ],
+    plugins: [
+      // antd按需加载
+      ['import', { libraryName: 'antd-mobile', libraryDirectory: 'es/components', style: false }],
     ],
   },
   devServer: {
